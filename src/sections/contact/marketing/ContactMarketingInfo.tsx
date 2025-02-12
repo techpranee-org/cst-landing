@@ -4,7 +4,6 @@ import { Typography, Stack, Link } from '@mui/material';
 import useResponsive from 'src/hooks/useResponsive';
 // components
 import Iconify from 'src/components/iconify';
-import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -14,10 +13,10 @@ export default function ContactMarketingInfo() {
   return (
     <Stack spacing={3}>
       {isMdUp && (
-        <Image
+        <img
           alt="marketing contact"
           src="/assets/illustrations/illustration_marketing_contact.svg"
-          sx={{ maxWidth: 380 }}
+          width={380}
         />
       )}
 

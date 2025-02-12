@@ -1,12 +1,6 @@
-// next
-import NextLink from 'next/link';
-// @mui
-import { Box, Container, Typography, Button, Stack, Unstable_Grid2 as Grid } from '@mui/material';
-// routes
-import { paths } from 'src/routes/paths';
-// components
-import Image from 'src/components/image';
-import Iconify from 'src/components/iconify';
+
+import {Container, Typography, Stack, Unstable_Grid2 as Grid } from '@mui/material';
+
 
 // ----------------------------------------------------------------------
 
@@ -31,7 +25,7 @@ export default function ITRecruitmentServices() {
     >
       <Grid container spacing={3} justifyContent="space-between" alignItems="center">
         <Grid xs={12} md={6} lg={5}>
-          <Image alt="services" src="/assets/illustrations/illustration_services.svg" />
+          <img alt="services" src="/assets/illustrations/illustration_services.svg" />
         </Grid>
 
         <Grid xs={12} md={6} lg={6}>

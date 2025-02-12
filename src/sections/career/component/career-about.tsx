@@ -1,23 +1,18 @@
 // @mui
 import { styled, alpha } from "@mui/material/styles";
 import {
-  Box,
   Container,
   Typography,
-  Button,
   Unstable_Grid2 as Grid,
 } from "@mui/material";
 // utils
-import { fShortenNumber } from "src/utils/formatNumber";
+
 // theme
 import { ColorSchema } from "src/theme/palette";
 // hooks
 import useResponsive from "src/hooks/useResponsive";
 // components
-import Image from "src/components/image";
-import Iconify from "src/components/iconify";
-import CountUp from "src/components/count-up";
-import Link from "next/link";
+
 
 // ----------------------------------------------------------------------
 
@@ -83,7 +78,7 @@ export default function CareerAbout() {
       >
         {isMdUp && (
           <Grid xs={12} md={6} lg={5}>
-            <Image
+            <img
               alt="teams"
               src="/assets/illustrations/illustration_teams.svg"
             />

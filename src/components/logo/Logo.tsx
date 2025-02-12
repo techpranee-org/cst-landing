@@ -4,7 +4,6 @@ import NextLink from "next/link";
 // @mui
 import { useTheme } from "@mui/material/styles";
 import { Box, BoxProps, Link } from "@mui/material";
-import Image from "next/image";
 
 // ----------------------------------------------------------------------
 
@@ -51,7 +50,7 @@ function Logo({ single = false, sx }: LogoProps) {
           ...sx,
         }}
       >
-        <Image src={logoSrc} alt="tp-logo" width={40} height={40} />
+        <img src={logoSrc} alt="tp-logo" width={40} height={40} />
         {/* {single ? singleLogo : fullLogo} */}
       </Box>
     </Link>

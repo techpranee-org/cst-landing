@@ -27,7 +27,6 @@ import Iconify from "src/components/iconify";
 import { pageLinks, navConfig } from "../nav/config-navigation";
 import ListDesktop from "./ListDesktop";
 import ListMobile from "./ListMobile";
-import Image from "next/image";
 import { useTheme } from "@mui/material/styles";
 // ----------------------------------------------------------------------
 
@@ -135,7 +134,7 @@ export default function Footer() {
                 <Stack spacing={1}>
                   {/* <Typography variant="h6">Let’s stay in touch</Typography> */}
                   <Link href="/" >
-                    <Image src={logoSrc} alt="tp-logo" width={60} height={60}/>
+                    <img src={logoSrc} alt="tp-logo" width={60} height={60}/>
                   </Link>
 
                   <Typography
