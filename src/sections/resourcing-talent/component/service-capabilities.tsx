@@ -84,7 +84,7 @@ export default function ResourcingTalentCapabilities() {
             ))}
           </Stack>
 
-          {isMdUp && <img alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />}
+          {isMdUp && <img alt="benefits" src="/assets/services/service_10.png" />}
 
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(-3).map((benefit, index) => (

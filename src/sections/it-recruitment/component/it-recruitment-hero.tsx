@@ -18,7 +18,7 @@ const StyledRoot = styled("div")(({ theme }) => ({
   ...bgGradient({
     startColor: `${alpha(theme.palette.common.black, 0)} 0%`,
     endColor: `${theme.palette.common.black} 75%`,
-    imgUrl: "/assets/images/marketing/marketing_services_hero.jpg",
+    imgUrl: "/assets/images/img_7.jpg",
   }),
   padding: theme.spacing(15, 0),
   [theme.breakpoints.up("md")]: {

@@ -20,7 +20,6 @@ import Label from "src/components/label";
 import { NavItemBaseProps, NavListProps } from "../types";
 import { StyledMenu, StyledSubheader } from "./styles";
 import { NavItem } from "./NavItem";
-import item from "src/sections/_marketing/case-study/item";
 import { clearTimeout, setTimeout } from "timers";
 
 // ----------------------------------------------------------------------
@@ -33,16 +32,6 @@ export default function NavList({ item }: { item: NavItemBaseProps }) {
   const { path, children } = item;
 
   const { active, isExternalLink } = useActiveLink(path, false);
-  // const mainList = children
-  //   ? children.filter((list) => list.subheader !== "Graphic Designing")
-  //   : [];
-
-  // const commonList = children
-  //   ? children.find((list) => list.subheader === "Graphic Designing")
-  //   : null;
-  // const graphicDesigningList = children
-  //   ? children.find((list) => list.subheader === "Graphic Designing")
-  //   : null;
 
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
@@ -76,55 +65,6 @@ export default function NavList({ item }: { item: NavItemBaseProps }) {
         onMouseEnter={handleOpenMenu}
         onMouseLeave={handleCloseMenu}
       />
-
-     {/*  {!!children && openMenu && (
-        <Portal>
-          <Fade in={openMenu}>
-            <StyledMenu
-              onMouseEnter={handleOpenMenu}
-              onMouseLeave={handleCloseMenu}
-            >
-              <Grid container>
-                <Grid xs={12}>
-                  <Box
-                    gap={5}
-                    display="grid"
-                    gridTemplateColumns="repeat(6, 1fr)"
-                    sx={{
-                      p: 5,
-                      height: 1,
-                      position: "relative",
-                      bgcolor: "background.neutral",
-                      width: "100%",
-                    }}
-                  >
-                    {children.map((list) => (
-                      <NavSubList
-                        key={list.subheader}
-                        subheader={list.subheader}
-                        cover={list.cover}
-                        items={list.items}
-                        isNew={list.isNew}
-                      />
-                    ))}
-                  </Box>
-                </Grid>
-
-                {graphicDesigningList && (
-                  <Grid xs={3}>
-                    <Box sx={{ bgcolor: "background.default", p: 5 }}>
-                      <NavSubList
-                        subheader={graphicDesigningList.subheader}
-                        items={graphicDesigningList.items}
-                      />
-                    </Box>
-                  </Grid>
-                )}
-              </Grid>
-            </StyledMenu>
-          </Fade>
-        </Portal>
-      )} */}
       {!!children && openMenu && (
   <Portal>
     <Fade in={openMenu}>
@@ -197,10 +137,7 @@ function NavSubList({ subheader, isNew, cover, items }: NavListProps) {
         <Image
           disabledEffect
           alt={cover}
-          src={
-            cover ||
-            "https://tparticles.s3.ap-south-1.amazonaws.com/9_1586a27ff5.jpg"
-          }
+          src={ cover}
           ratio="16/9"
           sx={{
             borderRadius: 1,

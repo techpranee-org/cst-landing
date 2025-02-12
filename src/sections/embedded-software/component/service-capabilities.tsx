@@ -3,7 +3,6 @@ import { Box, Container, Typography, Stack } from '@mui/material';
 // hooks
 import useResponsive from 'src/hooks/useResponsive';
 // components
-import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
@@ -85,7 +84,7 @@ export default function EmbeddedServicesCapabilities() {
             ))}
           </Stack>
 
-          {isMdUp && <Image alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />}
+          {isMdUp && <img alt="benefits" src="/assets/services/service_4.png" />}
 
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(-3).map((benefit, index) => (

@@ -85,7 +85,7 @@ export default function CloudCapabilities() {
             ))}
           </Stack>
 
-          {isMdUp && <img alt="benefits" src="/assets/illustrations/illustration_benefits.svg" />}
+          {isMdUp && <img alt="benefits" src="/assets/services/service_8.png" />}
 
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(-3).map((benefit, index) => (

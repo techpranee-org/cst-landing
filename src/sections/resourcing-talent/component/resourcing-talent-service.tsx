@@ -4,17 +4,6 @@ import {  Container, Typography, Stack, Unstable_Grid2 as Grid } from '@mui/mate
 
 // ----------------------------------------------------------------------
 
-const LISTS = [
-  "Startup-Focused Approach",
-"Creative Excellence",
-"Collaborative Process",
-"Holistic Solutions",
-"Timely Delivery"
-
-];
-
-// ----------------------------------------------------------------------
-
 export default function ResourcingTalentServices() {
   return (
     <Container
@@ -25,7 +14,7 @@ export default function ResourcingTalentServices() {
     >
       <Grid container spacing={3} justifyContent="space-between" alignItems="center">
         <Grid xs={12} md={6} lg={5}>
-          <img alt="services" src="/assets/illustrations/illustration_services.svg" />
+          <img alt="services" src="/assets/services/service_9.png" />
         </Grid>
 
         <Grid xs={12} md={6} lg={6}>
@@ -35,36 +24,7 @@ export default function ResourcingTalentServices() {
             <Typography sx={{ color: 'text.secondary' }}>
             In today’s competitive market, having the right talent is crucial for business success. At California SoftTech, we specialize in resourcing and talent solutions that help businesses find the best professionals across various industries. From permanent staffing to contract hiring and executive search, we provide end-to-end recruitment services tailored to your specific needs.
             </Typography>
-
-            {/* <Stack spacing={2}>
-              {LISTS.map((text) => (
-                <Stack key={text} direction="row" alignItems="center">
-                  <Box
-                    component="span"
-                    sx={{
-                      mr: 2,
-                      width: 6,
-                      height: 6,
-                      borderRadius: '50%',
-                      bgcolor: 'primary.main',
-                    }}
-                  />
-                  {text}
-                </Stack>
-              ))}
-            </Stack> */}
           </Stack>
-
-          {/* <Button
-            component={NextLink}
-            href={paths.marketing.caseStudies}
-            size="large"
-            color="inherit"
-            variant="outlined"
-            endIcon={<Iconify icon="carbon:chevron-right" />}
-          >
-            Check Our Work
-          </Button> */}
         </Grid>
       </Grid>
     </Container>

@@ -36,10 +36,10 @@ const GREY = {
 const PRIMARY = {
   lighter: '#FEE9D1',
   light: '#FDAB76',
-  main: '#43c7ff',
+  main: '#019cde',
   // #FA541C
   // #5121FF
-  dark: '#4f8da7',
+  dark: '#0076a8',
   // #B3200E
   darker: '#770508',
   contrastText: '#FFFFFF',
@@ -119,7 +119,7 @@ export default function palette(themeMode: 'light' | 'dark') {
       // GREY[800]
       // GREY[600]
       // #5121FF
-      primary: "#035578",
+      primary: "#019cde",
       secondary: GREY[600],
       disabled: GREY[500],
     },
