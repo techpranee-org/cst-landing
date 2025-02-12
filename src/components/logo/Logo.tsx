@@ -51,7 +51,7 @@ function Logo({ single = false, sx }: LogoProps) {
           ...sx,
         }}
       >
-        <Image src={logoSrc} alt="tp-logo" width={60} height={60} />
+        <Image src={logoSrc} alt="tp-logo" width={40} height={40} />
         {/* {single ? singleLogo : fullLogo} */}
       </Box>
     </Link>
