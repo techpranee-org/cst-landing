@@ -23,37 +23,19 @@ import { MyAppProps } from "./_app";
 
 const Favicon = () => (
   <>
-    {/* <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" /> */}
     <link
       rel="icon"
-      href="https://tparticles.s3.ap-south-1.amazonaws.com/techpranee_Logo_f17e79c6f3.webp"
+      href="/favicon/favicon.ico"
     />
   </>
 );
 
 const Meta = () => (
   <>
-    {/* PWA primary color */}
     <meta name="theme-color" content={palette("light").primary.main} />
-    {/* <meta
-      name="description"
-      content="The ZONE is built on top of MUI, a powerful library that provides flexible, customizable, and easy-to-use components."
-    />
-    <meta name="keywords" content="react,material,kit,application,landing & corporate,template" />
-    <meta name="author" content="ZONE UI Kit" /> */}
-    {/* <meta
-      name="title"
-      content="Techpranee-best digital marketing services"
-    ></meta>
-    <meta
-      name="description"
-      content="best digital marketing service provider in Hyderabad, We have experience creating various website and mobile Applications"
-    ></meta> */}
     <meta
       name="keywords"
-      content="top digital marketing services provider in Hyderabad, top digital marketing company in Hyderabad, top digital marketing services"
+      content="premier IT services provider, with operations in the United States, Canada& India."
     ></meta>
   </>
 );
