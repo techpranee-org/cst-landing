@@ -40,7 +40,7 @@ export default function LandingHero() {
           height: { md: `100vh` },
         }}
       >
-        <Grid container columnSpacing={{ xs: 0, md: 10 }}>
+        <Grid container columnSpacing={{ xs: 0, md: 10 }} alignItems={'center'}>
           <Grid
             xs={12}
             md={6}
@@ -55,7 +55,7 @@ export default function LandingHero() {
             </Typography>
 
             <Typography variant="h1" sx={{ my: 3 }}>
-              Innovate, Transform, Succeed – With us
+              A Source For Your IT Solutions
             </Typography>
 
             <Typography sx={{ color: "text.secondary" }} component="h2" >
@@ -65,10 +65,10 @@ export default function LandingHero() {
 
           {isMdUp && (
             <Grid xs={12} md={6} lg={7}>
-              <img
-                alt="marketing market"
-                src="/assets/landing/landing_1.png"
-              />
+                <img
+                  alt="marketing market"
+                  src="/assets/landing/landing_1.png"
+                />
             </Grid>
           )}
         </Grid>

@@ -59,7 +59,7 @@ const typography = {
   h1: {
     fontWeight: 700,
     lineHeight: 80 / 64,
-    fontSize: pxToRem(40),
+    fontSize: pxToRem(35),
     fontFamily: secondaryFont.style.fontFamily,
     // ...responsiveFontSizes({ sm: 52, md: 58, lg: 64 }),
     ...responsiveFontSizes({ sm: 56, md: 62, lg: 68 }),
@@ -67,7 +67,7 @@ const typography = {
   h2: {
     fontWeight: 700,
     lineHeight: 64 / 48,
-    fontSize: pxToRem(32),
+    fontSize: pxToRem(25),
     fontFamily: secondaryFont.style.fontFamily,
     // ...responsiveFontSizes({ sm: 40, md: 44, lg: 48 }),
     ...responsiveFontSizes({ sm: 44, md: 48, lg: 52 }),
@@ -75,7 +75,7 @@ const typography = {
   h3: {
     fontWeight: 700,
     lineHeight: 1.5,
-    fontSize: pxToRem(24),
+    fontSize: pxToRem(22),
     fontFamily: secondaryFont.style.fontFamily,
     // ...responsiveFontSizes({ sm: 26, md: 30, lg: 32 }),
     ...responsiveFontSizes({ sm: 30, md: 34, lg: 36 }),

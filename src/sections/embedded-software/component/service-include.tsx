@@ -58,7 +58,7 @@ export default function ServicesInclude() {
           mx: 'auto',
           maxWidth: 480,
           color: 'text.secondary',
-          mb: { xs: 8, md: 10 },
+          mb: { xs: 4, md: 6 },
         }}
       >
         Developing reliable and high-performance embedded software requires deep technical expertise and a thorough understanding of hardware-software integration. At California SoftTech, we bring years of experience in designing, developing, and optimizing embedded solutions that power smart devices and mission-critical applications. Our team ensures seamless performance, scalability, and security, helping businesses stay ahead in an increasingly connected world.
@@ -66,8 +66,8 @@ export default function ServicesInclude() {
 
       <Box
         sx={{
-          rowGap: 8,
-          columnGap: 10,
+          rowGap: 0,
+          columnGap: 8,
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',

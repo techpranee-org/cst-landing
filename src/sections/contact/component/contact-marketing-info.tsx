@@ -4,6 +4,7 @@ import { Typography, Stack, Link } from '@mui/material';
 import useResponsive from 'src/hooks/useResponsive';
 // components
 import Iconify from 'src/components/iconify';
+import ImageWithGradient from 'src/components/general/image-gradient';
 
 // ----------------------------------------------------------------------
 
@@ -13,11 +14,7 @@ export default function ContactMarketingInfo() {
   return (
     <Stack spacing={3}>
       {isMdUp && (
-        <img
-          alt="marketing contact"
-          src="/assets/contact/contact.png"
-          width={380}
-        />
+        <ImageWithGradient src="/assets/contact/contact_us.jpg" borderRadius={'12px'} height={'400px'}/>
       )}
 
       <Stack spacing={2} alignItems="flex-start" direction="row">

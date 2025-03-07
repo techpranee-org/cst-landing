@@ -14,7 +14,6 @@ import {
 // hooks
 import useActiveLink from "src/hooks/useActiveLink";
 // components
-import Image from "src/components/image";
 import Label from "src/components/label";
 //
 import { NavItemBaseProps, NavListProps } from "../types";
@@ -36,14 +35,14 @@ export default function NavList({ item }: { item: NavItemBaseProps }) {
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
     if (openMenu) {
-      handleCloseMenu();        
+      handleCloseMenu();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   const handleOpenMenu = () => {
     if (children) {
-      clearTimeout(closeTimeoutRef.current!); 
+      clearTimeout(closeTimeoutRef.current!);
       setOpenMenu(true);
     }
   };
@@ -66,46 +65,43 @@ export default function NavList({ item }: { item: NavItemBaseProps }) {
         onMouseLeave={handleCloseMenu}
       />
       {!!children && openMenu && (
-  <Portal>
-    <Fade in={openMenu}>
-      <StyledMenu
-        onMouseEnter={handleOpenMenu}
-        onMouseLeave={handleCloseMenu}
-        sx={{
-          left: '20%',
-          width: "auto",
-          maxWidth: "80vw", // Prevents it from being too wide
-          bgcolor: "background.neutral",
-          boxShadow: 3,
-          borderRadius: 2,
-          overflow: "hidden",
-        }}
-      >
-        <Box
-          gap={5}
-          display="grid"
-          gridTemplateColumns={`repeat(${children.length}, minmax(150px, 1fr))`}
-          sx={{
-            p: 3,
-            maxWidth: `${children.length * 200}px`, // Adjust width dynamically
-            minWidth: "300px",
-            width: "auto",
-          }}
-        >
-          {children.map((list) => (
-            <NavSubList
-              key={list.subheader}
-              subheader={list.subheader}
-              cover={list.cover}
-              items={list.items}
-              isNew={list.isNew}
-            />
-          ))}
-        </Box>
-      </StyledMenu>
-    </Fade>
-  </Portal>
-)}
+        <Portal>
+          <Fade in={openMenu}>
+            <StyledMenu
+              onMouseEnter={handleOpenMenu}
+              onMouseLeave={handleCloseMenu}
+            >
+              <Grid container>
+                <Grid xs={12}>
+                  <Box
+                    gap={8}
+                    display="flex"
+                    justifyContent="center" // Centers horizontally
+                    alignItems="center"
+                    gridTemplateColumns={`repeat(${Math.min(children.length, 6)}, 1fr)`}
+                    sx={{
+                      p: 5,
+                      height: 1,
+                      position: "relative",
+                      bgcolor: "background.neutral",
+                      width: "100%",
+                    }}
+                  >
+                    {children.map((list) => (
+                      <NavSubList
+                        key={list.subheader}
+                        subheader={list.subheader}
+                        items={list.items}
+                        isNew={list.isNew}
+                      />
+                    ))}
+                  </Box>
+                </Grid>
+              </Grid>
+            </StyledMenu>
+          </Fade>
+        </Portal>
+      )}
 
     </>
   );
@@ -113,11 +109,8 @@ export default function NavList({ item }: { item: NavItemBaseProps }) {
 
 // ----------------------------------------------------------------------
 
-function NavSubList({ subheader, isNew, cover, items }: NavListProps) {
+function NavSubList({ subheader, isNew, items }: NavListProps) {
   const { pathname } = useRouter();
-  console.log(items, subheader, "items");
-
-  const coverPath = items.length ? items[0].path : "";
 
   // const commonList = subheader === "Common";
   // const graphicDesigningList = subheader === "Graphic Designing";
@@ -132,25 +125,6 @@ function NavSubList({ subheader, isNew, cover, items }: NavListProps) {
           </Label>
         )}
       </StyledSubheader>
-
-      <Link component={NextLink} href={coverPath}>
-        <Image
-          disabledEffect
-          alt={cover}
-          src={ cover}
-          ratio="16/9"
-          sx={{
-            borderRadius: 1,
-            cursor: "pointer",
-            boxShadow: (theme) => theme.customShadows.z8,
-            transition: (theme) => theme.transitions.create("all"),
-            "&:hover": {
-              opacity: 0.8,
-              boxShadow: (theme) => theme.customShadows.z24,
-            },
-          }}
-        />
-      </Link>
 
       <Stack spacing={1.5} alignItems="flex-start">
         {items.map((item) => (

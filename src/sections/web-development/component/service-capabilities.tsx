@@ -1,5 +1,6 @@
 // @mui
 import { Box, Container, Typography, Stack } from '@mui/material';
+import ImageWithGradient from 'src/components/general/image-gradient';
 // hooks
 import useResponsive from 'src/hooks/useResponsive';
 
@@ -84,7 +85,7 @@ export default function WebDevelopmentCapabilities() {
             ))}
           </Stack>
 
-          {isMdUp && <img alt="benefits" src="/assets/services/service_6.png" />}
+          {isMdUp &&  <ImageWithGradient src="/assets/images/img_6.jpg" borderRadius={'15px'}/>}
 
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(-3).map((benefit, index) => (

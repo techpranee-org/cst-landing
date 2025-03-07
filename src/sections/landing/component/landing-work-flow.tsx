@@ -11,17 +11,17 @@ const COLORS = ['primary', 'secondary', 'warning'] as const;
 const SERVICES = [
   {
     name: 'Consultative Partnership',
-    icon: '/assets/icons/ic_sketch_design.svg',
+    icon: '/assets/landing/partnership.png',
     content: 'We work closely with your team to identify opportunities for improvement, and together, we define a roadmap that maximizes your investment in technology.'
   },
   {
     name: 'Agility & Responsiveness',
-    icon: '/assets/icons/ic_search.svg',
+    icon: '/assets/landing/agile.png',
     content: 'Our flexible methodology allows us to quickly adjust to changing market conditions or evolving project requirements, ensuring that we deliver timely solutions.'
   },
   {
     name: 'End-to-End Services: ',
-    icon: '/assets/icons/ic_optimization.svg',
+    icon: '/assets/landing/management.png',
     content: 'From initial strategy and design to implementation and ongoing support, California SoftTech provides a comprehensive suite of services that addresses every stage of your technology journey.'
   },
 ];

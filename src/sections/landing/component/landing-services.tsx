@@ -170,9 +170,12 @@ function ServiceItem({ service, index }: ServiceItemProps) {
         sx={{ 
           color: (theme)=> theme.palette.mode === 'light' ? theme.palette.primary.dark :  theme.palette.primary.light
           }}>{name}</TextMaxLine>
-        <TextMaxLine variant="body2" sx={{ color: "text.secondary" }}>
+        {/* <TextMaxLine variant="body2" sx={{ color: "text.secondary" }}>
           {content}
-        </TextMaxLine>
+        </TextMaxLine> */}
+        <Typography variant="body2" sx={{ color: "text.secondary" }}>
+          {content}
+        </Typography>
       </Stack>
     </Card>
   );

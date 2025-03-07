@@ -9,6 +9,8 @@ import Iconify from 'src/components/iconify';
 import { NavItemProps } from '../types';
 import { StyledNavItem } from './styles';
 
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
 // ----------------------------------------------------------------------
 
 export const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
@@ -24,9 +26,22 @@ export const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
         open={open}
         {...other}
       >
+         <ChevronRightIcon
+          className="chevron-icon"
+          sx={{
+            position: 'absolute',
+            left: -30,
+            top: '50%',
+            transform: 'translateY(-50%)',
+            fontSize: 22,
+            color: 'text.secondary',
+            opacity: 0,
+          }}
+        />
         {title}
 
         {!!children && <Iconify width={16} icon="carbon:chevron-down" sx={{ ml: 1 }} />}
+
       </StyledNavItem>
     );
 

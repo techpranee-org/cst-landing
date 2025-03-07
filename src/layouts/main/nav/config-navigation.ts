@@ -3,30 +3,73 @@ import { paths } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------
 
-export const pageLinks = [
+export const aboutPageLinks = [
   {
     order: '1',
-    subheader: 'Services',
-    // cover: 'https://tparticles.s3.ap-south-1.amazonaws.com/4_83dbc57b3c.jpg',
-    cover: '/assets/images/img_2.jpg',
+    subheader: '',
     items: [
-      { title: 'Healthcare Recruitment', path: "/healthcare-recruitment" },
-      { title: 'IT Recruitment Services', path: "/it-recruitment" },
-      { title: 'Embedded Software Services', path: "/embedded-software" },
-      { title: 'Web Development Services', path: "/web-development-service" },
-      { title: 'Cloud Services', path: "/cloud" },
-      { title: 'Resourcing & Talent', path: "/resourcing-talent" },
+      { title: 'Our Company', path: "/about" },
     ],
   },
+
+
+];
+
+export const servicePageLinks = [
+  {
+    order: '1',
+    subheader: '',
+    items: [
+      { title: 'Healthcare Services', path: "/healthcare-recruitment" },
+    ],
+  },
+
+  {
+    order: '2',
+    subheader: '',
+    items: [
+      { title: 'IT Recruitment Services', path: "/it-recruitment" },
+    ],
+  },
+
+  {
+    order: '3',
+    subheader: '',
+    items: [
+      { title: 'Embedded Solutions', path: "/embedded-software" },
+    ],
+  },
+
+  {
+    order: '4',
+    subheader: '',
+    items: [
+      { title: 'Web Development Services', path: "/web-development-service" },
+    ],
+  },
+
+  {
+    order: '5',
+    subheader: '',
+    items: [
+      { title: 'Cloud Services', path: "/cloud" },
+    ],
+  },
+
   
 ];
 
 export const navConfig = [
-  { title: 'About', path: '/about' },
+  {
+    title: 'Who We Are',
+    path: paths.pages,
+    children: [aboutPageLinks[0]],
+    dropdownStyle: { width: '100%' },
+  },
   {
     title: 'Services',
     path: paths.pages,
-    children: [pageLinks[0]],
+    children: [servicePageLinks[0], servicePageLinks[1], servicePageLinks[2], servicePageLinks[3], servicePageLinks[4]],
     dropdownStyle: { width: '100%' },
   },
   /* { title: 'Portfolio', path: '/portfolio' }, */

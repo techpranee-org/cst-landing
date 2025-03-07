@@ -1,66 +1,58 @@
 
-import { Stack, ToggleButton } from "@mui/material";
-
-
-// ----------------------------------------------------------------------
-
-const SERVICES = [
-    "Healthcare Recruitment",
-    "IT Recruitment Services",
-    "Embedded Software Services",
-    "Web Development Services",
-    "Cloud Services",
-    "Resourcing & Talent",
-];
-
-
+// @mui
+import { LoadingButton } from "@mui/lab";
+import { Stack, TextField } from "@mui/material";
+// utils
+import { useRef } from "react";
 // ----------------------------------------------------------------------
 
 export default function ContactForm() {
 
+  const formRef = useRef<HTMLFormElement>(null);
 
-    return (
+  const handleSubmit = () => {
+    setTimeout(() => {
+      if (formRef.current) {
+        formRef.current.reset(); 
+      }
+    }, 500); 
+  };
 
-        <Stack spacing={2.5} alignItems="flex-start">
-            {/* <Stack direction="row" flexWrap="wrap">
-                {SERVICES.map((service) => (
-                    <ToggleButton
-                        value={service}
-                        key={service}
-                        color="standard"
-                        sx={{
-                            py: 0.5,
-                            px: 2,
-                            m: 0.5,
-                            typography: "body2",
-                            "&.Mui-selected": {
-                                bgcolor: "text.primary",
-                                borderColor: "transparent",
-                                color: (theme) =>
-                                    theme.palette.mode === "light"
-                                        ? "common.white"
-                                        : "grey.800",
-                                "&:hover": {
-                                    bgcolor: "text.primary",
-                                },
-                            },
-                        }}
-                    >
-                        {service}
-                    </ToggleButton>
-                ))}
-            </Stack> */}
-            <Stack width={1}>
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScVl8C7tz-G9t8uioy1qkrBfDV_wYsSGJ3XUrwtkPGIn0bJdA/viewform?usp=sf_link"
-                    width="100%"
-                    height="500px"
-                    style={{ border: "none" }}
-                    allowFullScreen
-                />
-            </Stack>
+
+  return (
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      target="_blank"
+      action="https://formsubmit.co/31b90aea318b967b2eb24da8d5424b7c"
+      method="POST"
+      style={{ width: "100%" }}
+    >
+      <Stack spacing={2.5} alignItems="flex-start">
+        <Stack
+          spacing={{ xs: 2.5, md: 2 }}
+          direction={{ xs: "column", md: "row" }}
+          sx={{ width: 1 }}
+        >
+          <TextField fullWidth label='name' name="name" type="text" required />
         </Stack>
 
+        <TextField fullWidth label='Email' name="email" type="email" required />
+        <TextField fullWidth label='Phone number' name="phoneNumber" type="tel" required />
+        <TextField fullWidth label='Message' name="message" type="text" multiline rows={4} required />
+      </Stack>
 
-    );
+      {/* Submit Button */}
+      <LoadingButton
+        size="large"
+        color="inherit"
+        type="submit"
+        variant="contained"
+        sx={{ mt: 3 }}
+      >
+        Send Request
+      </LoadingButton>
+    </form>
+
+  );
 }

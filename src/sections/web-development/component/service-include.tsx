@@ -58,7 +58,7 @@ export default function ServicesInclude() {
           mx: 'auto',
           maxWidth: 480,
           color: 'text.secondary',
-          mb: { xs: 8, md: 10 },
+          mb: { xs: 4, md: 6 },
         }}
       >
         Building a website isn’t just about design—it’s about creating a seamless, engaging, and high-performing digital experience. Whether you need a simple website, a complex web application, or an eCommerce platform, we ensure fast, secure, and scalable solutions that help your business stand out.
@@ -66,8 +66,8 @@ export default function ServicesInclude() {
 
       <Box
         sx={{
-          rowGap: 8,
-          columnGap: 10,
+          rowGap: 0,
+          columnGap: 8,
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',

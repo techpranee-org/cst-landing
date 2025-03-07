@@ -8,59 +8,74 @@ import { NavItemProps } from '../types';
 
 type StyledNavItemProps = Omit<NavItemProps, 'item'>;
 
+
 export const StyledNavItem = styled(ListItemButton, {
   shouldForwardProp: (prop) => prop !== 'active' && prop !== 'open' && prop !== 'subItem',
 })<StyledNavItemProps>(({ active, open, subItem, theme }) => {
-  const dotActiveStyle = {
-    content: '""',
-    borderRadius: '50%',
-    position: 'absolute',
-    width: 6,
-    height: 6,
-    left: -12,
-    backgroundColor: theme.palette.primary.main,
-  };
+
 
   return {
     ...theme.typography.body2,
     padding: 0,
     height: '100%',
-    transition: theme.transitions.create('opacity', {
-      duration: theme.transitions.duration.shorter,
+    display: 'flex',
+    alignItems: 'center',
+    transition: theme.transitions.create(['left', 'color', 'opacity'], {
+      duration: theme.transitions.duration.standard,
+      easing: theme.transitions.easing.easeInOut,
     }),
-    '&:hover': {
-      opacity: 0.8,
-      backgroundColor: 'transparent',
-      '&::before': dotActiveStyle,
-    },
-    // Sub item
+
+
+
+    // Sub-item styles
     ...(subItem && {
-      ...theme.typography.body2,
       color: theme.palette.text.secondary,
+      // Hover styles
+      '&:hover': {
+        opacity: 0.8,
+        backgroundColor: 'transparent',
+        color: theme.palette.text.primary,
+        fontWeight: 'bold',
+        left: 25,
+        '& .chevron-icon': {
+          opacity: 1,
+        },
+
+      },
+
     }),
-    // Active
+
+
+    // Active item styles
     ...(active && {
       color: theme.palette.text.primary,
       fontWeight: theme.typography.fontWeightSemiBold,
-      '&::before': dotActiveStyle,
     }),
-    // Active sub item
+
+    // Active sub-item styles
     ...(active &&
       subItem && {
-        color: theme.palette.text.primary,
-        fontWeight: theme.typography.fontWeightSemiBold,
-        '&::before': {
-          ...dotActiveStyle,
-          color: theme.palette.primary.main,
-        },
-      }),
-    // Open
+      color: theme.palette.text.primary,
+      fontWeight: theme.typography.fontWeightSemiBold,
+
+    }),
+
+    // Open styles
     ...(open && {
       opacity: 0.48,
-      '&::before': dotActiveStyle,
+    }),
+
+    // Main menu item (no pseudo-element)
+    ...(!subItem && {
+      '&::before': {
+        content: 'none',
+      },
     }),
   };
 });
+
+
+
 
 // ----------------------------------------------------------------------
 
@@ -79,6 +94,6 @@ export const StyledMenu = styled(Paper)(({ theme }) => ({
 export const StyledSubheader = styled(ListSubheader)(({ theme }) => ({
   ...theme.typography.h6,
   padding: 0,
-  color: theme.palette.text.primary,
+  color: theme.palette.text.secondary,
   backgroundColor: 'transparent',
 }));

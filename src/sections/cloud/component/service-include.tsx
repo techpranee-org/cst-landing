@@ -58,7 +58,7 @@ export default function ServicesInclude() {
           mx: 'auto',
           maxWidth: 480,
           color: 'text.secondary',
-          mb: { xs: 8, md: 10 },
+          mb: { xs: 4, md: 6 },
         }}
       >
         Embracing the cloud is more than just a technology shift—it’s about unlocking new possibilities for growth and efficiency. Our cloud solutions help businesses reduce IT costs, improve agility, and enhance security, ensuring they stay competitive in a rapidly evolving market.
@@ -66,8 +66,8 @@ export default function ServicesInclude() {
 
       <Box
         sx={{
-          rowGap: 8,
-          columnGap: 10,
+          rowGap: 0,
+          columnGap: 8,
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',

@@ -16,15 +16,9 @@ import useResponsive from "src/hooks/useResponsive";
 // components
 import Iconify from "src/components/iconify";
 import CountUp from "src/components/count-up";
+import ImageWithGradient from "src/components/general/image-gradient";
 
 // ----------------------------------------------------------------------
-
-const SUMMARY = [
-  { title: "Years of experience", total: 4, icon: "carbon:increase-level" },
-  { title: "Awards", total: 100, icon: "carbon:trophy" },
-  { title: "Projects", total: 1, icon: "carbon:data-vis-4" },
-  { title: "Happy clients", total: 900, icon: "carbon:user-certification" },
-];
 
 // ----------------------------------------------------------------------
 
@@ -68,8 +62,8 @@ export default function AboutIntro() {
   return (
     <Container
       sx={{
-        pt: { xs: 3, md: 5 },
-        pb: 10,
+        pt: { xs: 4, md: 8 },
+        pb: 5,
       }}
     >
       <Grid
@@ -80,10 +74,7 @@ export default function AboutIntro() {
       >
         {isMdUp && (
           <Grid xs={12} md={6} lg={5}>
-            <img
-              alt="teams"
-              src="/assets/about/about_1.png"
-            />
+            <ImageWithGradient src="/assets/about/about_3.jpg" borderRadius={'12px'}/>
           </Grid>
         )}
 
@@ -97,7 +88,7 @@ export default function AboutIntro() {
         >
           <Typography variant="h2">We are Technology Innovators</Typography>
 
-          <Typography sx={{ mt: 3, mb: 5, color: "text.secondary" }}>
+          <Typography sx={{ mt: 3, mb: 3, color: "text.secondary" }}>
             California SoftTech is a premier IT services provider, with operations in the United States, Canada& India. We specialize in offering tailored professional consulting services that drive operational excellence and improve organizational performance through the strategic use of technology and outsourcing solutions.
             Our expertise spans a variety of industry sectors, including Healthcare, Insurance, Manufacturing, Government & Public Sector, Financial Services, Telecommunications, and Independent Software Vendors. We take pride in delivering innovative and efficient technology solutions that help businesses streamline operations and achieve measurable results.
             <br />
@@ -115,45 +106,6 @@ export default function AboutIntro() {
           </Link> */}
         </Grid>
       </Grid>
-
-      <Box
-        sx={{
-          mt: 10,
-          textAlign: "center",
-          display: "grid",
-          gap: { xs: 5, md: 8 },
-          gridTemplateColumns: {
-            xs: "repeat(1, 1fr)",
-            sm: "repeat(2, 1fr)",
-            md: "repeat(4, 1fr)",
-          },
-        }}
-      >
-        {SUMMARY.map((value) => (
-          <div key={value.title}>
-            <StyledIcon color={'primary'}>
-              <Iconify icon={value.icon} width={48} />
-            </StyledIcon>
-
-            <Typography variant="h2" sx={{ mt: 2, mb: 1 }}>
-              {value.title === "Projects" ? (
-                "1K"
-              ) : (
-                <CountUp
-                  start={value.total / 5}
-                  end={value.total}
-                  formattingFn={(newValue: number) => fShortenNumber(newValue)}
-                />
-              )}
-              {"+"}
-            </Typography>
-
-            <Typography sx={{ color: "text.secondary" }}>
-              {value.title}
-            </Typography>
-          </div>
-        ))}
-      </Box>
     </Container>
   );
 }

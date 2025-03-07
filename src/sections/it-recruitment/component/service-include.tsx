@@ -57,7 +57,7 @@ export default function ServicesInclude() {
           mx: 'auto',
           maxWidth: 480,
           color: 'text.secondary',
-          mb: { xs: 8, md: 10 },
+          mb: { xs: 4, md: 6 },
         }}
       >
         Finding the right IT talent can be challenging, but with our proven recruitment strategies, we ensure you get the best-fit professionals for your business needs. Whether you need software developers, cybersecurity experts, cloud engineers, or IT consultants, we have a vast network of pre-vetted candidates ready to join your team.
@@ -65,8 +65,8 @@ export default function ServicesInclude() {
 
       <Box
         sx={{
-          rowGap: 8,
-          columnGap: 10,
+          rowGap: 0,
+          columnGap: 8,
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',

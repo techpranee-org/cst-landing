@@ -4,6 +4,7 @@ import {
   Typography,
   Unstable_Grid2 as Grid,
 } from "@mui/material";
+import ImageWithGradient from "src/components/general/image-gradient";
 // utils
 // hooks
 import useResponsive from "src/hooks/useResponsive";
@@ -31,10 +32,7 @@ export default function CareerAbout() {
       >
         {isMdUp && (
           <Grid xs={12} md={6} lg={5}>
-            <img
-              alt="teams"
-              src="/assets/career/career.png"
-            />
+            <ImageWithGradient src="/assets/career/career_1.jpg" borderRadius={'12px'} height={'500px'}/>
           </Grid>
         )}
 

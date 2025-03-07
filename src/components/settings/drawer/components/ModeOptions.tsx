@@ -9,14 +9,14 @@ import { useSettingsContext } from '../../SettingsContext';
 export default function ModeOptions() {
   const { themeMode, onToggleMode } = useSettingsContext();
 
-  const isLight = themeMode === 'light';
+  const isDark = themeMode === 'dark';
 
   return (
     <ToggleButton
       fullWidth
-      color={isLight ? 'standard' : 'primary'}
+      color={isDark ? 'primary' : 'standard'}
       value={themeMode}
-      selected={!isLight}
+      selected={isDark}
       onChange={onToggleMode}
       sx={{
         p: 3,
@@ -26,7 +26,7 @@ export default function ModeOptions() {
         '&.Mui-selected': {
           boxShadow: 'none',
           bgcolor: 'transparent',
-          ...(!isLight && {
+          ...(isDark && {
             '&:hover': {
               bgcolor: 'action.hover',
             },
@@ -35,7 +35,7 @@ export default function ModeOptions() {
       }}
     >
       <Typography variant="subtitle2"></Typography>
-      <Iconify width={28} icon={isLight ? 'carbon:asleep' : 'carbon:asleep-filled'} />
+      <Iconify width={28} icon={isDark ? 'carbon:asleep-filled' : 'carbon:asleep'}  />
     </ToggleButton>
   );
 }

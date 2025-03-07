@@ -3,7 +3,6 @@ import Head from 'next/head';
 // layouts
 import MainLayout from 'src/layouts/main';
 // sections
-import { MarketingLandingView } from 'src/sections/_marketing/view';
 import LandingPage from 'src/sections/landing/landing-page';
 
 // ----------------------------------------------------------------------

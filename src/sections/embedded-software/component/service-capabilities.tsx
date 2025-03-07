@@ -1,5 +1,6 @@
 // @mui
 import { Box, Container, Typography, Stack } from '@mui/material';
+import ImageWithGradient from 'src/components/general/image-gradient';
 // hooks
 import useResponsive from 'src/hooks/useResponsive';
 // components
@@ -53,7 +54,7 @@ export default function EmbeddedServicesCapabilities() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-        Our Embedded Software Capabilities
+          Our Embedded Software Capabilities
         </Typography>
 
         <Typography
@@ -64,10 +65,10 @@ export default function EmbeddedServicesCapabilities() {
             maxWidth: 480,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
-            color: (theme)=> theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText 
+            color: (theme) => theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText
           }}
         >
-           At California SoftTech, we bring years of experience in designing, developing, and optimizing embedded solutions that power smart devices and mission-critical applications.
+          At California SoftTech, we bring years of experience in designing, developing, and optimizing embedded solutions that power smart devices and mission-critical applications.
         </Typography>
 
         <Box
@@ -84,7 +85,7 @@ export default function EmbeddedServicesCapabilities() {
             ))}
           </Stack>
 
-          {isMdUp && <img alt="benefits" src="/assets/services/service_4.png" />}
+          {isMdUp && <ImageWithGradient src='/assets/images/img_4.jpg' borderRadius={'15px'}/>}
 
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(-3).map((benefit, index) => (
@@ -101,10 +102,10 @@ export default function EmbeddedServicesCapabilities() {
             maxWidth: 480,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
-            color: (theme)=> theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText 
+            color: (theme) => theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText
           }}
         >
-           From concept to deployment, California SoftTech ensures your embedded systems are designed to deliver maximum efficiency, reliability, and performance.
+          From concept to deployment, California SoftTech ensures your embedded systems are designed to deliver maximum efficiency, reliability, and performance.
         </Typography>
       </Container>
     </Box>
@@ -164,7 +165,7 @@ function BenefitItem({ benefit, reverse, index }: BenefitItemProps) {
       />
 
       <Stack spacing={1}>
-        <Typography variant="h5" sx={{color: (theme)=> theme.palette.mode === 'light' ? '' : theme.palette.primary.light }}>{title}</Typography>
+        <Typography variant="h5" sx={{ color: (theme) => theme.palette.mode === 'light' ? '' : theme.palette.primary.light }}>{title}</Typography>
 
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
           {description}

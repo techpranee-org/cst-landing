@@ -57,7 +57,7 @@ export default function ServicesInclude() {
           mx: 'auto',
           maxWidth: 480,
           color: 'text.secondary',
-          mb: { xs: 8, md: 10 },
+          mb: { xs: 4, md: 6 },
         }}
       >
         Finding the right talent in the healthcare industry is crucial for ensuring quality patient care and seamless operations. At California SoftTech, we specialize in connecting healthcare providers with top-tier professionals, ensuring that hospitals, clinics, and medical institutions have access to the skilled workforce they need. With our expertise in healthcare staffing, we streamline the hiring process while maintaining compliance with industry standards.
@@ -65,8 +65,8 @@ export default function ServicesInclude() {
 
       <Box
         sx={{
-          rowGap: 8,
-          columnGap: 10,
+          rowGap: 0,
+          columnGap: 8,
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',

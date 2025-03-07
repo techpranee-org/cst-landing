@@ -14,9 +14,7 @@ import useResponsive from "src/hooks/useResponsive";
 // _mock
 import { _socials } from "src/_mock";
 // components
-import Iconify from "src/components/iconify";
 //
-import { pageLinks } from "../nav/config-navigation";
 import ListDesktop from "./ListDesktop";
 import ListMobile from "./ListMobile";
 import { useTheme } from "@mui/material/styles";
@@ -30,10 +28,24 @@ const companyList = [
     subheader: 'Company',
     items: [
       { title: 'Home', path: "/" },
-      { title: 'About', path: "/about" },
+      { title: 'Who We Are', path: "/about" },
       { title: 'Services', path: "#" },
       { title: 'Career', path: "/career" },
       { title: 'Contact', path: "/contact" },
+    ],
+  }
+]
+
+const serviceList = [
+  {
+    order: '2',
+    subheader: 'Services',
+    items: [
+      { title: 'Healthcare Services', path: "/healthcare-recruitment" },
+      { title: 'IT Recruitment Services', path: "/it-recruitment" },
+      { title: 'Embedded Solutions', path: "/embedded-software" },
+      { title: 'Web Development Services', path: "/web-development-service" },
+      { title: 'Cloud Services', path: "/cloud" },
     ],
   }
 ]
@@ -43,10 +55,6 @@ export default function Footer() {
   /* const isDarkMode = theme.palette.mode === "dark"; */
   const isMdUp = useResponsive("up", "md");
 
-
-  const desktopList = pageLinks.sort(
-    (listA, listB) => Number(listA.order) - Number(listB.order)
-  );
 
 
   const logoSrc =
@@ -70,7 +78,7 @@ export default function Footer() {
                 <Stack spacing={1}>
                   {/* <Typography variant="h6">Let’s stay in touch</Typography> */}
                   <Link href="/" >
-                    <img src={logoSrc} alt="tp-logo" width={60} height={60}/>
+                    <img src={logoSrc} alt="tp-logo" width={60} height={60} />
                   </Link>
 
                   <Typography
@@ -117,7 +125,7 @@ export default function Footer() {
                 {companyList.map((list) => (
                   <ListDesktop key={list.subheader} list={list} />
                 ))}
-                {desktopList.map((list) => (
+                {serviceList.map((list) => (
                   <ListDesktop key={list.subheader} list={list} />
                 ))}
               </Masonry>
@@ -126,7 +134,7 @@ export default function Footer() {
                 {companyList.map((list) => (
                   <ListMobile key={list.subheader} list={list} />
                 ))}
-                {desktopList.map((list) => (
+                {serviceList.map((list) => (
                   <ListMobile key={list.subheader} list={list} />
                 ))}
               </Stack>
