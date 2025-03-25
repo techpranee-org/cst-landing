@@ -85,7 +85,7 @@ export default function EmbeddedServicesCapabilities() {
             ))}
           </Stack>
 
-          {isMdUp && <ImageWithGradient src='/assets/images/img_4.jpg' borderRadius={'15px'}/>}
+          {isMdUp && <ImageWithGradient src='/assets/images/img_6.jpg' borderRadius={'15px'}/>}
 
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(-3).map((benefit, index) => (

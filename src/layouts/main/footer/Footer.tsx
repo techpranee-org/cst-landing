@@ -78,7 +78,7 @@ export default function Footer() {
                 <Stack spacing={1}>
                   {/* <Typography variant="h6">Let’s stay in touch</Typography> */}
                   <Link href="/" >
-                    <img src={logoSrc} alt="tp-logo" width={60} height={60} />
+                    <img src={logoSrc} alt="tp-logo" width={80} height={80} />
                   </Link>
 
                   <Typography
