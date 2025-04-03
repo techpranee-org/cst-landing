@@ -49,7 +49,7 @@ export default function EmbeddedSoftwareHero() {
                 Innovative Embedded Software Solutions for Smart Technologies
                 </span>
                 <br />
-                Embedded Software Service
+                Embedded Software Services
               </Typography>
 
               <Typography sx={{ opacity: 0.72 }}>

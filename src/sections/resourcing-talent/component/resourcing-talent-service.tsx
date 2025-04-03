@@ -22,7 +22,7 @@ export default function ResourcingTalentServices() {
             <Typography variant="h2">Resourcing & Talent</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-            In today’s competitive market, having the right talent is crucial for business success. At California SoftTech, we specialize in resourcing and talent solutions that help businesses find the best professionals across various industries. From permanent staffing to contract hiring and executive search, we provide end-to-end recruitment services tailored to your specific needs.
+            In today’s competitive market, having the right talent is crucial for business success. At California SoftTech Inc, we specialize in resourcing and talent solutions that help businesses find the best professionals across various industries. From permanent staffing to contract hiring and executive search, we provide end-to-end recruitment services tailored to your specific needs.
             </Typography>
           </Stack>
         </Grid>

@@ -48,7 +48,7 @@ export default function LandingSuccessStory() {
               </Typography>
 
               <Typography sx={{ opacity: 0.72 }}>
-                Over the years, California SoftTech has successfully partnered with a diverse portfolio of Fortune 500 clients, including leaders in telecommunications, insurance, banking, pharmaceuticals, and financial services. With thousands of consultants placed across a variety of roles, we have consistently delivered exceptional service and transformative outcomes for our clients.
+                Over the years, California SoftTech Inc has successfully partnered with a diverse portfolio of Fortune 500 clients, including leaders in telecommunications, insurance, banking, pharmaceuticals, and financial services. With thousands of consultants placed across a variety of roles, we have consistently delivered exceptional service and transformative outcomes for our clients.
               </Typography>
 
               <Typography sx={{ opacity: 0.72 }}>

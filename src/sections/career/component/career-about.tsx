@@ -47,7 +47,7 @@ export default function CareerAbout() {
           <Typography variant="h4">Are you ready to join a dynamic, forward-thinking company where your skills and expertise can make a real impact? </Typography>
 
           <Typography sx={{ mt: 3, mb: 5, color: "text.secondary" }}>
-          At California SoftTech, we’re always looking for talented professionals who are passionate about technology and innovation. Whether you’re an experienced consultant or just starting your career, we offer a collaborative environment where you can grow, develop, and achieve your career goals.
+          At California SoftTech Inc, we’re always looking for talented professionals who are passionate about technology and innovation. Whether you’re an experienced consultant or just starting your career, we offer a collaborative environment where you can grow, develop, and achieve your career goals.
             <br />
             <br />
           </Typography>

@@ -67,7 +67,7 @@ export default function ResourcingTalentCapabilities() {
             color: (theme)=> theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText 
           }}
         >
-           At California SoftTech, we provide comprehensive recruitment solutions designed to help businesses identify, attract, and retain top talent. Our expertise spans permanent staffing, contract hiring, executive search, and workforce management, ensuring that organizations have the right people in the right roles. With a data-driven approach and a global talent network, we deliver customized, scalable, and efficient hiring solutions to meet your evolving business needs.
+           At California SoftTech Inc, we provide comprehensive recruitment solutions designed to help businesses identify, attract, and retain top talent. Our expertise spans permanent staffing, contract hiring, executive search, and workforce management, ensuring that organizations have the right people in the right roles. With a data-driven approach and a global talent network, we deliver customized, scalable, and efficient hiring solutions to meet your evolving business needs.
         </Typography>
 
         <Box

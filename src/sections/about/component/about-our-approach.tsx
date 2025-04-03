@@ -30,7 +30,7 @@ const TIMELINES = [
     // year: '2019',
     title: 'End-to-End Services',
     description:
-      'From initial strategy and design to implementation and ongoing support, California SoftTech provides a comprehensive suite of services that addresses every stage of your technology journey.',
+      'From initial strategy and design to implementation and ongoing support, California SoftTech Inc provides a comprehensive suite of services that addresses every stage of your technology journey.',
   },
 
 ];
@@ -62,7 +62,7 @@ export default function AboutOurApproach() {
           <Typography variant="h2">Our approach</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-          At California SoftTech, we believe in a collaborative approach to consulting. We start by understanding your business objectives and technology needs, ensuring that we align our solutions with your goals. Our approach is built on the following core principles: </Typography>
+          At California SoftTech Inc, we believe in a collaborative approach to consulting. We start by understanding your business objectives and technology needs, ensuring that we align our solutions with your goals. Our approach is built on the following core principles: </Typography>
         </Stack>
 
         <Timeline position={isMdUp ? 'alternate' : 'right'}>

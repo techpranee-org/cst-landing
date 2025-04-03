@@ -36,7 +36,7 @@ export const servicePageLinks = [
     order: '3',
     subheader: '',
     items: [
-      { title: 'Embedded Solutions', path: "/embedded-software" },
+      { title: 'Embedded Services', path: "/embedded-software" },
     ],
   },
 

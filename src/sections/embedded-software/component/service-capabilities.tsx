@@ -68,7 +68,7 @@ export default function EmbeddedServicesCapabilities() {
             color: (theme) => theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText
           }}
         >
-          At California SoftTech, we bring years of experience in designing, developing, and optimizing embedded solutions that power smart devices and mission-critical applications.
+          At California SoftTech Inc, we bring years of experience in designing, developing, and optimizing embedded solutions that power smart devices and mission-critical applications.
         </Typography>
 
         <Box
@@ -105,7 +105,7 @@ export default function EmbeddedServicesCapabilities() {
             color: (theme) => theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText
           }}
         >
-          From concept to deployment, California SoftTech ensures your embedded systems are designed to deliver maximum efficiency, reliability, and performance.
+          From concept to deployment, California SoftTech Inc ensures your embedded systems are designed to deliver maximum efficiency, reliability, and performance.
         </Typography>
       </Container>
     </Box>

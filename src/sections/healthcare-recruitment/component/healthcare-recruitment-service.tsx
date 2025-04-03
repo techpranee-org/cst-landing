@@ -25,7 +25,7 @@ export default function HealthcareRecruitmentServices() {
             <Typography variant="h2">Healthcare Recruitment Solutions</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              At California SoftTech, we specialize in Healthcare Recruitment, helping medical institutions and healthcare providers find top-tier talent to meet their growing demands. Our expertise in healthcare staffing ensures that organizations can access highly skilled professionals who deliver exceptional patient care and operational excellence.
+              At California SoftTech Inc, we specialize in Healthcare Recruitment, helping medical institutions and healthcare providers find top-tier talent to meet their growing demands. Our expertise in healthcare staffing ensures that organizations can access highly skilled professionals who deliver exceptional patient care and operational excellence.
             </Typography>
           </Stack>
         </Grid>

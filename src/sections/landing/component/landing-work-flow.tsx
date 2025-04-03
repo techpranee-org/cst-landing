@@ -22,7 +22,7 @@ const SERVICES = [
   {
     name: 'End-to-End Services: ',
     icon: '/assets/landing/management.png',
-    content: 'From initial strategy and design to implementation and ongoing support, California SoftTech provides a comprehensive suite of services that addresses every stage of your technology journey.'
+    content: 'From initial strategy and design to implementation and ongoing support, California SoftTech Inc provides a comprehensive suite of services that addresses every stage of your technology journey.'
   },
 ];
 
@@ -51,7 +51,7 @@ export default function LandingWorkFlow() {
         <Typography variant="h2">Our Approach</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          At California SoftTech, we believe in a collaborative approach to consulting. We start by understanding your business objectives and technology needs, ensuring that we align our solutions with your goals. Our approach is built on the following core principles:
+          At California SoftTech Inc, we believe in a collaborative approach to consulting. We start by understanding your business objectives and technology needs, ensuring that we align our solutions with your goals. Our approach is built on the following core principles:
         </Typography>
       </Stack>
 

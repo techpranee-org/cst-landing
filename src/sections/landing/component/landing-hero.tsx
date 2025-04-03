@@ -11,6 +11,7 @@ import { bgGradient } from "src/utils/cssStyles";
 import useResponsive from "src/hooks/useResponsive";
 // components
 import { useTheme } from "@mui/material/styles";
+import { borderRadius } from "@mui/system";
 
 // ----------------------------------------------------------------------
 
@@ -20,6 +21,33 @@ const StyledRoot = styled("div")(({ theme }) => ({
     imgUrl: "/assets/background/overlay_1.jpg",
   }),
   overflow: "hidden",
+}));
+
+const ImageWrapper = styled("div")(({ theme }) => ({
+  position: "relative",
+  display: "inline-block",
+  width: "100%",
+  height: "100%",
+  borderRadius: theme.shape.borderRadius * 2,
+
+  "& img": {
+    width: "100%",
+    height: "auto",
+    display: "block",
+    borderRadius: "inherit",
+  },
+
+  "&::before": {
+    content: '""',
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background: `linear-gradient(to bottom, ${alpha(theme.palette.common.black, 0)} 0%, ${theme.palette.common.black} 90%)`,
+    zIndex: 1,
+    borderRadius: "inherit",
+  },
 }));
 
 // ----------------------------------------------------------------------
@@ -50,8 +78,8 @@ export default function LandingHero() {
             }}
           >
             {/* sx={{ color: "secondary.main" }} */}
-            <Typography variant="overline" sx={{ color: isDarkMode ? "#DFE3E8" : "#919EAB" }}>
-              California SoftTech
+            <Typography variant="overline" fontSize={25} sx={{ color: isDarkMode ? "#DFE3E8" : "#919EAB" }}>
+              California SoftTech Inc
             </Typography>
 
             <Typography variant="h1" sx={{ my: 3 }}>
@@ -64,11 +92,13 @@ export default function LandingHero() {
           </Grid>
 
           {isMdUp && (
-            <Grid xs={12} md={6} lg={7}>
+            <Grid xs={12} md={6} lg={8}>
+              <ImageWrapper>
                 <img
                   alt="marketing market"
-                  src="/assets/landing/landing_1.png"
+                  src="/assets/landing/landing.jpg"
                 />
+              </ImageWrapper>
             </Grid>
           )}
         </Grid>

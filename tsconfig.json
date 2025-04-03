@@ -28,6 +28,6 @@
     "extras/travel",
     "extras/marketing",
     "extras/auth",
-    "src/sections/_marketing/landing"
+    "src/sections/_marketing/landing",
   ]
 }

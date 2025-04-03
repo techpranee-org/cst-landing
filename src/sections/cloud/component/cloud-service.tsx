@@ -22,7 +22,7 @@ export default function CloudServices() {
             <Typography variant="h2">Cloud Service</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              In today’s fast-paced digital landscape, businesses need flexible, secure, and scalable cloud solutions to stay ahead. At California SoftTech, we provide end-to-end cloud services, enabling organizations to leverage the full potential of cloud computing. Whether you need cloud migration, infrastructure management, or custom cloud applications, our expert team ensures seamless integration, enhanced performance, and cost efficiency.
+              In today’s fast-paced digital landscape, businesses need flexible, secure, and scalable cloud solutions to stay ahead. At California SoftTech Inc, we provide end-to-end cloud services, enabling organizations to leverage the full potential of cloud computing. Whether you need cloud migration, infrastructure management, or custom cloud applications, our expert team ensures seamless integration, enhanced performance, and cost efficiency.
             </Typography>
           </Stack>
         </Grid>

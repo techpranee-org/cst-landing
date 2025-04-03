@@ -68,7 +68,7 @@ export default function WebDevelopmentCapabilities() {
             color: (theme)=> theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText 
           }}
         >
-           At California SoftTech, we offer comprehensive web development services that cater to businesses of all sizes. Our expertise spans across front-end and back-end development, UI/UX design, API integrations, and cloud-based solutions.
+           At California SoftTech Inc, we offer comprehensive web development services that cater to businesses of all sizes. Our expertise spans across front-end and back-end development, UI/UX design, API integrations, and cloud-based solutions.
         </Typography>
 
         <Box

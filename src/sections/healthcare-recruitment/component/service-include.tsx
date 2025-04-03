@@ -60,7 +60,7 @@ export default function ServicesInclude() {
           mb: { xs: 4, md: 6 },
         }}
       >
-        Finding the right talent in the healthcare industry is crucial for ensuring quality patient care and seamless operations. At California SoftTech, we specialize in connecting healthcare providers with top-tier professionals, ensuring that hospitals, clinics, and medical institutions have access to the skilled workforce they need. With our expertise in healthcare staffing, we streamline the hiring process while maintaining compliance with industry standards.
+        Finding the right talent in the healthcare industry is crucial for ensuring quality patient care and seamless operations. At California SoftTech Inc, we specialize in connecting healthcare providers with top-tier professionals, ensuring that hospitals, clinics, and medical institutions have access to the skilled workforce they need. With our expertise in healthcare staffing, we streamline the hiring process while maintaining compliance with industry standards.
       </Typography>
 
       <Box

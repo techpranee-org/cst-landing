@@ -27,7 +27,7 @@ export default function ContactMarketingInfo() {
             sx={{
               color: (theme) => theme.palette.mode === 'light' ? theme.palette.primary.dark : theme.palette.primary.contrastText
             }}
-          >+1-408-622-0024</Link>
+          >+1-248-416-0457</Link>
 
         </Stack>
       </Stack>
@@ -53,15 +53,15 @@ export default function ContactMarketingInfo() {
           <Typography variant="h6">Location</Typography>
           <Link
             variant="body2"
-            href="https://www.google.com/maps/search/?api=1&query=1030+E+El+Camino+Real,+Suite+%23111,+Sunnyvale,+CA+94087"
+            href="https://www.google.com/maps/search/?api=1&query=5600+West+Maple+Rd,+Suite+C307,+West+Bloomfield,+MI+48322"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
               color: (theme) => theme.palette.mode === 'light' ? theme.palette.primary.dark : theme.palette.primary.contrastText
             }}>
-            1030 E El Camino Real,
-            Suite #111
-            Sunnyvale, CA 94087</Link>
+            5600 West Maple Rd,
+            Suite C307, 
+            West Bloomfield, MI 48322</Link>
         </Stack>
       </Stack>
     </Stack>

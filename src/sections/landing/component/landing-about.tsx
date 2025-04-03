@@ -56,7 +56,7 @@ export default function LandingAbout() {
             </Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              California SoftTech is a premier IT services provider, with operations in the United States, Canada& India. We specialize in offering tailored professional consulting services that drive operational excellence and improve organizational performance through the strategic use of technology and outsourcing solutions.
+              California SoftTech Inc is a premier IT services provider, with operations in the United States, Canada& India. We specialize in offering tailored professional consulting services that drive operational excellence and improve organizational performance through the strategic use of technology and outsourcing solutions.
             </Typography>
 
             <Link href={'/about'}>

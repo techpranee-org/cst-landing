@@ -69,7 +69,7 @@ export default function CloudCapabilities() {
             color: (theme)=> theme.palette.mode === 'light' ? theme.palette.grey[800] : theme.palette.secondary.contrastText 
           }}
         >
-           At California SoftTech, we offer a full spectrum of cloud solutions designed to enhance efficiency, security, and scalability. Our expertise covers cloud migration, infrastructure management, application development, and multi-cloud deployments, ensuring businesses leverage the power of the cloud seamlessly. 
+           At California SoftTech Inc, we offer a full spectrum of cloud solutions designed to enhance efficiency, security, and scalability. Our expertise covers cloud migration, infrastructure management, application development, and multi-cloud deployments, ensuring businesses leverage the power of the cloud seamlessly. 
         </Typography>
 
         <Box

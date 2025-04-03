@@ -49,7 +49,7 @@ export default function CareerHero() {
                 Build Your Career with Innovation & Growth
                 </span>
                 <br />
-                Careers at California SoftTech
+                Careers at California SoftTech Inc
               </Typography>
 
               <Typography sx={{ opacity: 0.72 }}>

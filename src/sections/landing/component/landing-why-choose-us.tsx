@@ -98,10 +98,10 @@ export default function LandingWhyChooseUs() {
                     Proven IT Expertise
                 </Typography>
 
-                <Typography variant="h2">Why Choose California SoftTech?</Typography>
+                <Typography variant="h2">Why Choose California SoftTech Inc?</Typography>
 
                 <Typography sx={{ color: "text.secondary" }}>
-                    At California SoftTech, we don’t just provide services—we partner with our clients to ensure long-term success. Our team of highly skilled professionals combines deep industry expertise with the latest technological advancements to solve your business challenges. Here’s why organizations choose us:
+                    At California SoftTech Inc, we don’t just provide services—we partner with our clients to ensure long-term success. Our team of highly skilled professionals combines deep industry expertise with the latest technological advancements to solve your business challenges. Here’s why organizations choose us:
                 </Typography>
             </Stack>
 

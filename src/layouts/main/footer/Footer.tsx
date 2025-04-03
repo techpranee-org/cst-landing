@@ -43,9 +43,20 @@ const serviceList = [
     items: [
       { title: 'Healthcare Services', path: "/healthcare-recruitment" },
       { title: 'IT Recruitment Services', path: "/it-recruitment" },
-      { title: 'Embedded Solutions', path: "/embedded-software" },
+      { title: 'Embedded Services', path: "/embedded-software" },
       { title: 'Web Development Services', path: "/web-development-service" },
       { title: 'Cloud Services', path: "/cloud" },
+    ],
+  }
+]
+
+const legalList = [
+  {
+    order: '3',
+    subheader: 'Legal',
+    items: [
+      { title: 'Privacy Policy', path: "/privacy-policy" },
+      { title: 'Terms & Conditions', path: "/terms-and-conditions" },
     ],
   }
 ]
@@ -85,7 +96,7 @@ export default function Footer() {
                     variant="caption"
                     sx={{ color: "text.secondary" }}
                   >
-                    California SoftTech is a premier IT services provider, with operations in the United States, Canada& India.We take pride in delivering innovative and efficient technology solutions that help businesses streamline operations and achieve measurable results.
+                    California SoftTech Inc is a premier IT services provider, with operations in the United States, Canada& India.We take pride in delivering innovative and efficient technology solutions that help businesses streamline operations and achieve measurable results.
                   </Typography>
                 </Stack>
               </Stack>
@@ -117,7 +128,7 @@ export default function Footer() {
           <Grid xs={12} md={6}>
             {isMdUp ? (
               <Masonry
-                columns={2}
+                columns={3}
                 spacing={2}
                 defaultColumns={4}
                 defaultSpacing={2}
@@ -128,6 +139,9 @@ export default function Footer() {
                 {serviceList.map((list) => (
                   <ListDesktop key={list.subheader} list={list} />
                 ))}
+                {legalList.map((list) => (
+                  <ListDesktop key={list.subheader} list={list} />
+                ))}
               </Masonry>
             ) : (
               <Stack spacing={1.5}>
@@ -135,6 +149,9 @@ export default function Footer() {
                   <ListMobile key={list.subheader} list={list} />
                 ))}
                 {serviceList.map((list) => (
+                  <ListMobile key={list.subheader} list={list} />
+                ))}
+                {legalList.map((list) => (
                   <ListMobile key={list.subheader} list={list} />
                 ))}
               </Stack>

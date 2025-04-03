@@ -61,7 +61,7 @@ export default function ServicesInclude() {
           mb: { xs: 4, md: 6 },
         }}
       >
-        Developing reliable and high-performance embedded software requires deep technical expertise and a thorough understanding of hardware-software integration. At California SoftTech, we bring years of experience in designing, developing, and optimizing embedded solutions that power smart devices and mission-critical applications. Our team ensures seamless performance, scalability, and security, helping businesses stay ahead in an increasingly connected world.
+        Developing reliable and high-performance embedded software requires deep technical expertise and a thorough understanding of hardware-software integration. At California SoftTech Inc, we bring years of experience in designing, developing, and optimizing embedded solutions that power smart devices and mission-critical applications. Our team ensures seamless performance, scalability, and security, helping businesses stay ahead in an increasingly connected world.
       </Typography>
 
       <Box

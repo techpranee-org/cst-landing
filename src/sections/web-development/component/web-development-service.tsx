@@ -23,7 +23,7 @@ export default function WebDevelopmentServices() {
             <Typography variant="h2">Web Development Solutions</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              In today’s digital era, having a strong online presence is essential for business success. At California SoftTech, we specialize in custom web development that is tailored to your business needs. Our team of experienced developers builds scalable, secure, and high-performance websites and web applications that enhance user experience and drive growth.
+              In today’s digital era, having a strong online presence is essential for business success. At California SoftTech Inc, we specialize in custom web development that is tailored to your business needs. Our team of experienced developers builds scalable, secure, and high-performance websites and web applications that enhance user experience and drive growth.
             </Typography>
           </Stack>
         </Grid>

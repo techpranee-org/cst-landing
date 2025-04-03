@@ -48,7 +48,7 @@ export default function AboutCoreValues() {
         Our Core Values
       </Typography>
       <Typography sx={{ mt: 3, mb: 5, color: "text.secondary" }}>
-        Our values guide everything we do at California SoftTech. We are dedicated to delivering excellence, integrity, and value to every client we serve. These core values reflect our commitment to fostering lasting relationships and achieving mutual success:
+        Our values guide everything we do at California SoftTech Inc. We are dedicated to delivering excellence, integrity, and value to every client we serve. These core values reflect our commitment to fostering lasting relationships and achieving mutual success:
         <br />
         <br />
       </Typography>

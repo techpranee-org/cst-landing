@@ -89,7 +89,7 @@ export default function AboutIntro() {
           <Typography variant="h2">We are Technology Innovators</Typography>
 
           <Typography sx={{ mt: 3, mb: 3, color: "text.secondary" }}>
-            California SoftTech is a premier IT services provider, with operations in the United States, Canada& India. We specialize in offering tailored professional consulting services that drive operational excellence and improve organizational performance through the strategic use of technology and outsourcing solutions.
+            California SoftTech Inc is a premier IT services provider, with operations in the United States, Canada& India. We specialize in offering tailored professional consulting services that drive operational excellence and improve organizational performance through the strategic use of technology and outsourcing solutions.
             Our expertise spans a variety of industry sectors, including Healthcare, Insurance, Manufacturing, Government & Public Sector, Financial Services, Telecommunications, and Independent Software Vendors. We take pride in delivering innovative and efficient technology solutions that help businesses streamline operations and achieve measurable results.
             <br />
             <br />

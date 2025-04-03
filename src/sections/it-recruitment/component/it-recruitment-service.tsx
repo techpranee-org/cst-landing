@@ -24,7 +24,7 @@ export default function ITRecruitmentServices() {
             <Typography variant="h2">IT Recruitment Solutions</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              At California SoftTech, we specialize in IT Recruitment Services, helping businesses find top-tier technology talent to drive innovation and digital transformation. With a deep understanding of the ever-evolving tech landscape, we connect organizations with highly skilled IT professionals who bring expertise, efficiency, and innovation to every role.
+              At California SoftTech Inc, we specialize in IT Recruitment Services, helping businesses find top-tier technology talent to drive innovation and digital transformation. With a deep understanding of the ever-evolving tech landscape, we connect organizations with highly skilled IT professionals who bring expertise, efficiency, and innovation to every role.
             </Typography>
           </Stack>
         </Grid>

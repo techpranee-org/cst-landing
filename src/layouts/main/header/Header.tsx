@@ -27,7 +27,7 @@ export default function Header() {
     <>
       <Box sx={{ position: "fixed", width: 60, height: 60, bottom: 20, right: 20, zIndex: 1000, borderRadius: 1, display: "flex", justifyContent: "center", alignItems: "center", cursor: "pointer", background: "#0dc042" }}
         onClick={() => {
-          const phoneNumber = "+14086220024";
+          const phoneNumber = "+12484160457";
           window.open(`https://wa.me/${phoneNumber}`, "_blank");
         }}>
         <Iconify
