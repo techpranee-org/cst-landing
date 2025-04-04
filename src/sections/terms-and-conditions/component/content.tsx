@@ -176,7 +176,7 @@ export default function TermsAndConditionsContent() {
               <ListItemText primary={'info@calisofttech.com'} sx={{ margin: 0, color: 'text.secondary' }} />
             </ListItem>
             <ListItem sx={{ display: "flex", alignItems: "flex-start", padding: "4px 0" }}>
-              <ListItemText primary={'+1 408 622 0024'} sx={{ margin: 0, color: 'text.secondary' }} />
+              <ListItemText primary={'+1 248 416 0457'} sx={{ margin: 0, color: 'text.secondary' }} />
             </ListItem>
           </List>
           For more details, please review our Terms & Conditions page.
