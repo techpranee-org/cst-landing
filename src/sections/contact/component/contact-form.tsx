@@ -13,7 +13,7 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false);
 
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  /* const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
   
     if (!formRef.current) return;
@@ -24,7 +24,7 @@ export default function ContactForm() {
     setLoading(true);
   
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycby8k2LJWhpXNzIRqbdnHr7rKKneQPUXWC3l0_iQseYcmTNSFkjR2uLiUlLYndiKc9IX/exec', {
         method: 'POST', // Ensure that the method is POST
         headers: {
           'Content-Type': 'application/json',
@@ -44,11 +44,52 @@ export default function ContactForm() {
     } finally {
       setLoading(false); // Stop loading after the response is received (success or error)
     }
+  }; */
+
+  /* https://script.google.com/macros/s/AKfycbyzNVDlLWr5O9NOiNpMJDQ2TX9W5w-r7WUPTyeoO6kcEL9ItS7yiJhcbZ8F_O-W3BP_/exec */
+  
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setLoading(true);
+  
+    const formData = new FormData(event.currentTarget);
+    const googleFormData = new URLSearchParams({
+      "entry.11698890": formData.get("name") as string,
+      "entry.227979588": formData.get("email") as string,
+      "entry.165307385": formData.get("phoneNumber") as string,
+      "entry.2061946990": formData.get("message") as string,
+    });
+  
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbws5Y7fCBLejWUigPshzRh4A_y7gb_de-MM7bc_cIyXuFX7glpUXbD-kMrG1zwGQXld/exec", {
+        method: "POST",
+        body: googleFormData,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded", // Ensure the content type is correct
+        },
+      });
+  
+      // Check if the response was successful
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        setTermsAccepted(false);
+        formRef.current?.reset();
+      } else {
+        throw new Error('Submission failed.');
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Submission failed.");
+    } finally {
+      setLoading(false);
+    }
   };
   
   
   
-
+  
+  
+  
 
   return (
     <form
