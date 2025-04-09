@@ -50,7 +50,6 @@ const ulSections = [
     title: "SMS Consent and Messaging Compliance",
     head: "",
     content: [
-      "By opting in for text messages, you agree to receive appointment reminders and important updates from California SoftTech Inc at the number provided. Message frequency varies. Message & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help.",
       "SMS Consent: We will not share your opt-in to an SMS campaign with any third party for purposes unrelated to providing you with the services of that campaign. We may share your Personal Data, including your SMS opt-in or consent status, with third parties that help us provide our messaging services, including but not limited to platform providers, phone companies, and any other vendors who assist us in the delivery of text messages.",
       "All of the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.",
     ],

@@ -110,6 +110,7 @@ export default function ContactForm() {
         <TextField fullWidth label='Phone number' name="phoneNumber" type="tel" required />
         <TextField fullWidth label='Message' name="message" type="text" multiline rows={4} required />
         <FormControlLabel
+          sx={{ alignItems: "flex-start"}}
           control={
             <Checkbox
               required
@@ -120,15 +121,12 @@ export default function ContactForm() {
             />
           }
           label={
-            <Typography variant="body2">
-              I accept the{" "}
-              <Link href="/terms-and-conditions" underline="hover">
-                Terms and Conditions
-              </Link>{" "}
-              and{" "}
-              <Link href="/privacy-policy" underline="hover">
+            <Typography variant="body2" mt={.5}>
+              By opting in for text messages, you agree to receive an appointment reminders and important updates from California SoftTech Inc at the number provided. Message frequency varies. Msg & data rates may apply. Reply STOP to unsubscribe. Reply HELP for help. View our <Link href="/privacy-policy" underline="hover">
                 Privacy Policy
-              </Link>
+              </Link> {" "} and{" "} <Link href="/terms-and-conditions" underline="hover">
+                Terms and Conditions
+              </Link>  for more information.             
             </Typography>
           }
         />
