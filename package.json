@@ -34,6 +34,7 @@
     "date-fns": "^2.29.3",
     "framer-motion": "^10.9.2",
     "google-map-react": "^2.2.0",
+    "jspdf": "^3.0.1",
     "lodash.debounce": "^4.0.8",
     "lodash.merge": "^4.6.2",
     "next": "^13.2.4",
