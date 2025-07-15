@@ -48,10 +48,13 @@ export default function CareerOpenings() {
                         >
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                                 <Grid container spacing={2} alignItems="center">
+                                    <Grid item xs={12} md={2}>
+                                        <Typography variant="h6">Job Id: {job.id}</Typography>
+                                    </Grid>
                                     <Grid item xs={12} md={4}>
                                         <Typography variant="h6">{job.title}</Typography>
                                     </Grid>
-                                    <Grid item xs={12} md={8}>
+                                    <Grid item xs={12} md={6}>
                                         <Box display="flex" flexWrap="wrap" gap={2}>
                                             <Chip
                                                 icon={<LocationOnIcon />}
@@ -74,6 +77,10 @@ export default function CareerOpenings() {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography variant="subtitle1" gutterBottom>
+                                    Description:
+                                </Typography>
+                                <Typography variant="body2" color={"text.secondary"}>{job.description}</Typography>
+                                <Typography variant="subtitle1" gutterBottom mt={2}>
                                     Job Duties / Responsibilities:
                                 </Typography>
                                 <ul >

@@ -8,9 +8,9 @@ import SvgColor from 'src/components/svg-color';
 const ADDRESS = [
   {
     title: 'Michigan',
-    description: '5600 West Maple Rd,Suite C307, West Bloomfield, MI 48322',
+    description: '6441 Inkster Road,Suite 130 & 140, Bloomfield Hills, MI 48301',
     icon: '/assets/icons/michi.png',
-    link: "https://www.google.com/maps/search/?api=1&query=5600+West+Maple+Rd,+Suite+C307,+West+Bloomfield,+MI+48322"
+    link: "https://www.google.com/maps/search/?api=1&query=6441+Inkster+Road,+Suite+130+%26+140,+Bloomfield+Hills,+MI+48301"
   },
   {
     title: 'California',

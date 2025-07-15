@@ -53,15 +53,15 @@ export default function ContactMarketingInfo() {
           <Typography variant="h6">Location</Typography>
           <Link
             variant="body2"
-            href="https://www.google.com/maps/search/?api=1&query=5600+West+Maple+Rd,+Suite+C307,+West+Bloomfield,+MI+48322"
+            href="https://www.google.com/maps/search/?api=1&query=6441+Inkster+Road,+Suite+130+%26+140,+Bloomfield+Hills,+MI+48301"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
               color: (theme) => theme.palette.mode === 'light' ? theme.palette.primary.dark : theme.palette.primary.contrastText
             }}>
-            5600 West Maple Rd,
-            Suite C307, 
-            West Bloomfield, MI 48322</Link>
+            6441 Inkster Road,
+            Suite 130 & 140, 
+            Bloomfield Hills, MI 48301</Link>
         </Stack>
       </Stack>
     </Stack>
