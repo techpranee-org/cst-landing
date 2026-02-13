@@ -142,19 +142,21 @@ export default function CareerOpenings() {
 
                                 </Typography>
 
-                                <Box mt={3}>
-                                    <Button
-                                        variant="outlined"
-                                        startIcon={<DownloadIcon />}
-                                        component="a"
-                                        href={job.pdfUrl}
-                                        download
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Download PDF
-                                    </Button>
-                                </Box>
+                                {job.pdfUrl && (
+                                    <Box mt={3}>
+                                        <Button
+                                            variant="outlined"
+                                            startIcon={<DownloadIcon />}
+                                            component="a"
+                                            href={job.pdfUrl}
+                                            download
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Download PDF
+                                        </Button>
+                                    </Box>
+                                )}
                             </AccordionDetails>
                         </Accordion>
                     </Grid>

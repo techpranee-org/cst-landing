@@ -47,5 +47,33 @@ export const jobs: Job[] = [
     jobPostedDate: "2025-05-02",
     jobExpirationDate: "2025-06-01",
     applicationEmail: "hr@calisofttech.com"
+  },
+  {
+    id: 12314,
+    title: "QA Specialist",
+    location: "Bloomfield Hills, Michigan",
+    type: "Full-Time",
+    experience: "60 months",
+    description: "California SoftTech Inc, a Bloomfield Hills, MI based Software Consulting Firm has multiple openings for JOB ID 12314: QA Specialist.",
+    responsibilities: [
+      "Coordinate with formulation and process teams to gather key product-related information to ensure compliance with quality and regulatory requirements.",
+      "Identify risks, implement and track corrective/preventive actions (CAPA) to maintain product reliability.",
+      "Participate in in-process checks, stability testing, and batch record reviews to verify product quality.",
+      "Partner with Regulatory Affairs, Quality Control, and Manufacturing teams to investigate deviations, OOS (Out-of-Spec) results, and non-conformances, ensuring timely resolution and documentation.",
+      "Provide updates to team members and stakeholders on quality metrics, audit findings, and compliance status."
+    ],
+    requirements: [
+      "Bachelor's degree in Science, Pharmacy or related.",
+      "60 months of relevant experience.",
+      "Travel and relocation to various unanticipated client locations throughout the United States may be required. Equal Opportunity Employer."
+    ],
+    pdfUrl: "",
+    positionsAvailable: 10,
+    salaryRange: "$97,906.00 - $100,000.00/year",
+    companyName: "California SoftTech Inc",
+    companyWebsite: "https://www.calisofttech.com/",
+    jobPostedDate: "2026-02-13",
+    jobExpirationDate: "2026-03-15",
+    applicationEmail: "hr@calisofttech.com"
   }
 ];
