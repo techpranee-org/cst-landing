@@ -102,12 +102,14 @@ export default function CareerOpenings() {
                                     ))}
                                 </ul>
 
-                                <Typography variant="body2" mt={2}>
-                                    <strong>Positions Available:</strong>
-                                    <Box component="span" sx={{ color: 'text.secondary', ml: 2 }}>
-                                        {job.positionsAvailable}
-                                    </Box>
-                                </Typography>
+                                {job.positionsAvailable > 0 && (
+                                    <Typography variant="body2" mt={2}>
+                                        <strong>Positions Available:</strong>
+                                        <Box component="span" sx={{ color: 'text.secondary', ml: 2 }}>
+                                            {job.positionsAvailable}
+                                        </Box>
+                                    </Typography>
+                                )}
                                 <Typography variant="body2">
                                     <strong>Salary Range:</strong>
                                     <Box component="span" sx={{ color: 'text.secondary', ml: 2 }}>

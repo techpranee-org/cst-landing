@@ -18,6 +18,34 @@ export type Job = {
 };
 
 export const jobs: Job[] = [
+    {
+    id: 12570,
+    title: "Business Analyst ",
+    location: "West Bloomfield, Michigan 48301",
+    type: "Full-Time",
+    experience: "60 months",
+    description: "California SoftTech Inc, Bloomfield Hills, MI based Software Consulting Firm has multiple openings for  JOB ID 12570: Business Analyst .",
+    responsibilities: [
+      ".Work with stakeholders and cross-functional teams to support alignment and successful project delivery.",
+      ".Develop and maintain user requirements using user stories with UX/UI designers.",
+      ".Design dashboards and reports that inform product strategy and decision making.",
+      "Monitor requirements status and contribute to wireframes, project scoping, and effort estimation.",
+      "Execute requirements validation to confirm alignment with customer and business goals."
+    ],
+    requirements: [
+      "Bachelor's degree in CS, IT  or related.",
+      "60 months of relevant experience.",
+      "Travel and relocation to various unanticipated client locations throughout the United States may be required. Equal Opportunity Employer.",
+    ],
+    pdfUrl: "/pdfs/Business_Analyst.pdf",
+    positionsAvailable: 0,
+    salaryRange: "$121,784.00 - $123,000.00/year",
+    companyName: "California SoftTech Inc",
+    companyWebsite: "https://www.calisofttech.com/",
+    jobPostedDate: "2026-04-30",
+    jobExpirationDate: "2026-06-01",
+    applicationEmail: "hr@calisofttech.com"
+  },
   {
     id: 11454,
     title: "Statistical Programmer",
