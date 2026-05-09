@@ -37,7 +37,7 @@ export const jobs: Job[] = [
       "60 months of relevant experience.",
       "Travel and relocation to various unanticipated client locations throughout the United States may be required. Equal Opportunity Employer.",
     ],
-    pdfUrl: "/pdfs/Business_Analyst.pdf",
+    pdfUrl: "",
     positionsAvailable: 0,
     salaryRange: "$121,784.00 - $123,000.00/year",
     companyName: "California SoftTech Inc",

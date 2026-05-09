@@ -144,7 +144,7 @@ export default function CareerOpenings() {
 
                                 </Typography>
 
-                                {job.pdfUrl && (
+                                {job.pdfUrl.trim().length > 0 && (
                                     <Box mt={3}>
                                         <Button
                                             variant="outlined"
