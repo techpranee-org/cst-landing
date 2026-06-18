@@ -43,7 +43,7 @@ export const jobs: Job[] = [
     companyName: "California SoftTech Inc",
     companyWebsite: "https://www.calisofttech.com/",
     jobPostedDate: "2026-04-30",
-    jobExpirationDate: "2026-06-01",
+    jobExpirationDate: "2026-06-30",
     applicationEmail: "hr@calisofttech.com"
   },
   {
